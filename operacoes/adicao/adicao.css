@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+html,
+body {
+
+    font-family: 'Expletus Sans', Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 100vh;
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s ease;
+    border: 5px solid lime;
+    background-color: limegreen;
+    margin: 1px;
+}
+
+
+
+.card:hover button {
+    margin-bottom: 8px;
+    opacity: 1;
+}
+
+
+.con-text {
+
+    position: absolute;
+
+}
+
+button {
+    opacity: 0;
+    margin-bottom: -200px;
+    border-radius: 12px;
+    background: limegreen;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .95rem;
+    outline: groove;
+    height: 50px;
+    width: 100px;
+    font-weight: bold;
+
+}
+
+button:hover {
+    background: #fff;
+    color: lime;
+    border: 2px solid lime;
+}
+
+button:active{
+    transform: translateY(4px);
+}
+
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    background-color:  lime;
+    border: none;
+    border-radius: 15px;
+}
+
+.button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    z-index: 50;
+}
+
+.button:hover {
+    background-color: lime
+}
+
+.button:active {
+    background-color: lime;
+    transform: translateY(4px);
+}
