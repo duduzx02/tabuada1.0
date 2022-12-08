@@ -1,89 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Expletus Sans", Arial, Helvetica, sans-serif;
+  list-style: none;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Expletus Sans', Arial, Helvetica, sans-serif;
-    list-style: none;
+body {
+  background-color: #444;
 }
 
 .grid-container {
-    overflow: hidden;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    grid-template-columns: 25% 25%;
-    grid-template-rows: 40% 40%;
-    gap: 10%;
-    background-color: #FFFFFF;
-    height: 100vh;
+  max-width: 700px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 100px auto;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .grid-container div a {
-    padding: 0px 150px 0px 150px;
-    color: black;
+  padding: 0 150px;
+  color: black;
 }
 
 .grid-container div {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    font-size: 90px;
-    font-weight: 600;
-    box-shadow: 15px  15px black;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  font-size: 90px;
+  font-weight: 600;
+  box-shadow: 15px 15px black;
 }
 
-.grid-container div:active{
-    box-shadow: 15px 15px 15px 15px white ;
-    transition: 0.5s;
-    transform: translateY(7px);
-
+.grid-container div:active {
+  box-shadow: 15px 15px 15px 15px white;
+  transition: 0.5s;
+  transform: translateY(7px);
 }
-
 
 #addition {
-    background-color: limegreen;
+  background-color: #45cc2a;
 }
 
 #subtraction {
-    background-color: goldenrod;
+  background-color: #cc2a96;
 }
 
 #multiplication {
-    background-color: #FD0000;
+  background-color: #cc2a2a;
 }
 
 #division {
-    background-color: #1100FB;
+  background-color: #ccc12a;
 }
 
 footer {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    color: white;
-    background: #7200be;
-    width: 100%;
+  margin-top: 5em;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: #7200be;
+  width: 100%;
 }
 
-footer a{
-    color: black;
-}
-
-
-@media only screen and (max-width: 960px) {
-    .grid-container {
-        grid-template-columns: 40% 40%;
-        grid-template-rows: 35% 35%;
-    }
-    a{
-        text-decoration: none;
-        padding: 0px 75px 0px 75px;
-        color: black;
-    }
+footer a {
+  color: black;
 }
